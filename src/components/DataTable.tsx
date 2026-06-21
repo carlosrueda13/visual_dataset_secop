@@ -141,7 +141,7 @@ export default function DataTable({ data, visibleFields, loading }: Props) {
           }
           return <span className="cell-text">{val}</span>;
         },
-        size: field.type === "number" ? 130 : field.type === "datetime" ? 110 : 180,
+        size: field.apiField === "objeto_del_contrato" ? 350 : field.type === "number" ? 130 : field.type === "datetime" ? 110 : 180,
       })),
     [activeFields]
   );
